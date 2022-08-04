@@ -3,16 +3,16 @@ package com.litsynp.kotlinpractice.javatokotlin
 /** 9강. 코틀린에서 클래스를 다루는 방법 */
 fun main() {
     // 1. 클래스와 프로퍼티
-    val person = Person("litsynp", 100)
+    val person = Lec09Person("litsynp", 100)
     println(person.name) // .name으로 getter
     person.age = 10      // .age로 setter 호출
     println(person.age)
 
     // 2. 생성자와 init
     println("====")
-    val person1 = Person("litsynp")
+    val person1 = Lec09Person("litsynp")
     println("====")
-    val person2 = Person()
+    val person2 = Lec09Person()
     println("====")
     // 역순으로 실행된다.
     // 1. 초기화 블록의 body 먼저 실행
@@ -30,7 +30,7 @@ fun main() {
 
 // 생성자는 위에: class Person constructor(...)
 // constructor은 생략 가능
-class Person(
+private class Lec09Person(
     // 생성자 만드는 동시에 property 생성 가능
     val name: String, var age: Int
     // 주생성자(primary constructor)는 반드시 존재해야 함

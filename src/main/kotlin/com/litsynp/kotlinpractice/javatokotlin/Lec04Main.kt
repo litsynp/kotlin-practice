@@ -74,7 +74,7 @@ fun main() {
     println(money11.amount)
 }
 
-data class Money(
+private data class Money(
     val amount: Long
 ) {
     operator fun plus(other: Money): Money {

@@ -34,7 +34,7 @@ fun main() {
     //   예기치 못한 버그가 생길 수 있다
 }
 
-abstract class Animal(
+private abstract class Animal(
     protected val species: String,
     protected open val legCount: Int, // open을 무조건 붙여줘야 getter override 가능
     // 추상 프로퍼티가 아니라면, 상속 받을 때 open을 꼭 붙여야 한다
@@ -42,7 +42,7 @@ abstract class Animal(
     abstract fun move()
 }
 
-class Cat(
+private class Cat(
     species: String
 ) : Animal(species, 4) { // 상속에 colon 사용, 무조건 생성자 바로 호출
     // override 필수적으로 붙여야 함
@@ -51,7 +51,7 @@ class Cat(
     }
 }
 
-class Penguin(
+private class Penguin(
     species: String
 ) : Animal(species, 2), Swimmable, Flyable { // interface 구현도 : 뒤에 나온다
 
@@ -77,7 +77,7 @@ class Penguin(
         get() = 3
 }
 
-interface Flyable {
+private interface Flyable {
     fun act() { // default 생략 가능
         println("파닥 파닥")
     }
@@ -85,7 +85,7 @@ interface Flyable {
 //    fun fly() // 추상 메소드 생성 가능
 }
 
-interface Swimmable {
+private interface Swimmable {
     val swimmability: Int // val이니 getter을 상속 클래스에서 구현해주길 기대
 //        get() = 3 // 여기서 지정도 가능
     // "Kotlin에서는 backing field가 없는 프로퍼티를 interface에 만들 수 있다"
@@ -96,7 +96,7 @@ interface Swimmable {
     }
 }
 
-open class Base(
+private open class Base(
     open val number: Int = 100
 ) {
     init {
@@ -107,7 +107,7 @@ open class Base(
     }
 }
 
-class Derived(
+private class Derived(
     override val number: Int
 ) : Base(number) {
     init {
