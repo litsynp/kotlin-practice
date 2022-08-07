@@ -4,7 +4,7 @@
 
 코틀린 개념과 문법을 자바와의 비교를 통해 알아본다. 주석을 이용해 학습한 내용을 정리한다.
 
-- [com.litsynp.kotlinpractice.javatokotlin](https://github.com/litsynp/kotlin-practice/tree/main/src/main/kotlin/com/litsynp/kotlinpractice/javatokotlin)
+[소스 코드 - `com.litsynp.kotlinpractice.javatokotlin`](https://github.com/litsynp/kotlin-practice/tree/main/src/main/kotlin/com/litsynp/kotlinpractice/javatokotlin)
 
 ## Table of Contents
 
@@ -42,9 +42,9 @@
 
 ### [5강. 코틀린에서 제어문을 다루는 방법](https://github.com/litsynp/kotlin-practice/blob/main/src/main/kotlin/com/litsynp/kotlinpractice/javatokotlin/Lec05Main.kt)
 
-    1. `if문`
-    2. Expression과 Statement
-    3. switch와 `when`
+ 1. `if문`
+ 2. Expression과 Statement
+ 3. switch와 `when`
 
 ### [6강. 코틀린에서 반복문을 다루는 방법](https://github.com/litsynp/kotlin-practice/blob/main/src/main/kotlin/com/litsynp/kotlinpractice/javatokotlin/Lec06Main.kt)
 
